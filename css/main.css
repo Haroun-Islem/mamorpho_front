@@ -203,7 +203,7 @@
 }
 
 .premium{
-  width: 725px!important;
+  width: 50vw!important;
   padding: 10px;
   border: 2px solid;
   border-image: linear-gradient(to right, #f15e19, #0b81cf);
