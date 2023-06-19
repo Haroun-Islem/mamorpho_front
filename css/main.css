@@ -191,3 +191,13 @@
   color: #003055;
   transition: ease 2s;
 }
+
+.test{
+  width: 400px!important;
+}
+
+.photo-tenu{
+  width: 850px!important;
+  display: flex;
+  flex-wrap: wrap;
+}
