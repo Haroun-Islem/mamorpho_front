@@ -201,3 +201,18 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.premium{
+  width: 725px!important;
+  padding: 10px;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #f15e19, #0b81cf);
+  border-image-slice: 1;
+}
+.button-1{
+  background-color: #F67B6B;
+  padding: 20px 50px;
+  border-radius: 30px;
+  width: 233px;
+  border: none;
+}

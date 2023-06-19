@@ -34,4 +34,19 @@ $(document).ready(function() {
     
     });
 
-  $('.')
+  $('#fav').click(function() {
+    $('#mes_photos').addClass('visually-hidden');
+    $('#tenue_1').removeClass('visually-hidden');
+    $('.lien-4').addClass('fw-bolder');
+    $('.lien-3').removeClass('fw-bolder');
+    
+  });
+
+  $('#tenue').click(function() {
+    $('#tenue_1').addClass('visually-hidden');
+    $('#mes_photos').removeClass('visually-hidden');
+    $('.lien-3').addClass('fw-bolder');
+    $('.lien-4').removeClass('fw-bolder');
+    
+  });
+  
