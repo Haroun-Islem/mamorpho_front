@@ -31,3 +31,10 @@
     border: none;
 
   }
+  
+  .test{
+    
+    border: solid 1px blue;
+    margin: auto;
+    
+  }
