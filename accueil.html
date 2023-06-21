@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Accueil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/logos/favico_morpho.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/aos/aos.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+    <navbar class="sidebar" data-aos="fade-right">
+        <a href="">
+            <img class="logo w-100" src="assets/logos/logo_mamorpho.png" >
+        </a>    
+        <div class="p-2 m-auto mt-5">
+        <a href="index.html" class="title_menu mb-3 p-2"><i class="fas fa-home-lg-alt"></i>&nbsp;&nbsp;Inspirations</a>
+        <a href="premium.html" class="title_menu mb-3 p-2"><i class="fas fa-ruler-horizontal"></i>&nbsp;&nbsp;Premium</a>
+        <a href="compte.html" class="title_menu mb-3 p-2"><i class="far fa-user"></i>&nbsp;&nbsp;Compte</a>
+        <a href="connect.html" class="title_menu mb-3 p-2"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Connexion</a>
+        </div>
+    </navbar>
+
+    <section class="mt-5" id="section_1">
+        <hr class="p-0 m-0 w-75 m-auto" >
+        <div class="menu_1 text-center p-0 d-flex justify-content-center  ">
+            <a class="me-4 lien-1 d-block p-3 fw-bolder  " href="#" id="decouvrir_1">Découvrir</a>
+            <a class="lien-2 d-block p-3" href="#" id="nos_suggestions">Nos suggestions</a>
+
+        </div>
+
+        <div class="mt-2 d-block d-flex justify-content-center">
+            <input class="search-input w-50 p-2" type="text" placeholder="&#128269;&nbsp;Rechercher">
+        </div>
+        
+        <div class="photos-card  w-50 m-auto mt-5 bg-white" data-aos="zoom-in">
+            <div class="linear">
+                                <p class="name-of fw-bolder d-block">Courtney Chose</p>
+
+            </div>
+            <div class="pl-3 d-flex d-block ">
+                <a href="#">
+                <img class="p-profil me-3" src="assets/photos/photo_test.jpg">
+                </a>
+            </div>
+            <div class="image_card mt-2">
+                <img class="card-img-top" src="assets/photos/photos_test.png" alt="">
+                <div class="like_comment">
+                    <div class="ico_1"><i class="fas fa-comment"></i></div>                
+                    <div class="ico_2"><i class="fas fa-heart" ></i></div>
+                </div>
+            </div>
+           
+            <div class="mt-2 ">
+                <p class="fw-bolder ms-2">5 j'aime</p>
+                <p class="ms-2 show-commentary-size"><a id="show" href="#read" >Voir les commentaires</a></p>
+            </div>
+    
+            <div class="show-commentary visually-hidden mb-2" id="read"> 
+                <p class="ms-2 mt-2 p-2 "><span>#Julien</span> Superbe photo wowoow</p><br>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="mt-5 visually-hidden" id="section_2">
+        <hr class="p-0 m-0 w-75 m-auto" >
+        <div class="menu_1 text-center p-0 d-flex justify-content-center  ">
+            <a class="me-4 lien-1 d-block p-3  " href="#" id="decouvrir">Découvrir</a>
+            <a class="lien-2 d-block p-3 fw-bolder" href="#" id="nos_suggestions">Nos suggestions</a>
+        </div>
+
+        <div class="text-center mt-4">
+            <a class="space_maker" href="#"><i class="ico_mesure fas fa-ruler-vertical"></i>&nbsp;&nbsp;Mesurer</a>
+            <a class="" href="#"><i class="fas fa-filter"></i>&nbsp;&nbsp;Trier</a>
+        </div>
+
+
+        <h3 class="text-center mt-5">Occasions</h1>
+        <div class="occasions mt-4  w-50 m-auto  text-center">
+
+            <div class="image_card_occasions d-inline">
+                <img class="mb-auto" src="assets/photos/occ_1.png" alt="">
+            </div>
+            <div class="image_card_occasions d-inline">
+                <img class="mb-auto" src="assets/photos/occ_2.png" alt="">
+            </div>
+            <div class="image_card_occasions d-inline ">
+                <img class="mb-auto" src="assets/photos/occ_3.png" alt="">
+            </div>
+            <div class="image_card_occasions d-inline ">
+                <img class="mb-auto" src="assets/photos/occ_4.png" alt="">
+            </div>
+        </div>
+
+        <h3 class="text-center mt-4 ">Couleurs</h1>
+        <div class="mt-4 m-auto w-50  text-center">
+
+            <div class="image_card_occasions d-inline">
+                <div class="image_card_occasions d-inline">
+                    <img class="mb-auto" src="assets/photos/coul_1.png" alt="">
+                </div>
+                <div class="image_card_occasions d-inline">
+                    <img class="mb-auto" src="assets/photos/coul_2.png" alt="">
+                </div>
+                <div class="image_card_occasions d-inline ">
+                    <img class="mb-auto" src="assets/photos/coul_3.png" alt="">
+                </div>
+                <div class="image_card_occasions d-inline ">
+                    <img class="mb-auto" src="assets/photos/coul_4.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="assets/aos/aos.js"></script>
+    <script src="js/aos_init.js"></script>
+    <script src="js/main.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
