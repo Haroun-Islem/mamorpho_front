@@ -216,3 +216,23 @@
   width: 233px;
   border: none;
 }
+.notification{
+  border-radius: 40px;
+  background-color: rgb(90, 184, 96);
+  color: white;
+  transition: ease 0.3;
+  
+}
+
+.notification-2{
+  border-radius: 40px;
+  background-color: rgb(238, 62, 43);
+  color: white;
+  transition: ease 0.3;
+}
+.notification-3{
+  border-radius: 40px;
+  background-color: rgb(240, 162, 29);
+  color: white;
+  transition: ease 0.3;
+}
