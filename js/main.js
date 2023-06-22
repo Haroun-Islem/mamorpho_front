@@ -50,6 +50,71 @@ $("#form-1").submit(function (event) {
   event.preventDefault();
   // Autres traitements ou envoi du formulaire via AJAX
 });
+
+$(document).ready(function() {
+  $('#form-2').submit(function(event) {
+    event.preventDefault();    
+  });
+});
+
+$(document).ready(function() {
+  $('#deconnect').submit(function(event) {
+    event.preventDefault();    
+  });
+});
+
+
+
+/*-----------------------------------------------------------------------------CALL API------------------------------------------------------------------------------------------*/
+
+$('#connect').click(function(){
+  let email = $('#e-mail').val();
+  let password = $('#password_1').val();
+
+  if (email === "" || password === "") {
+    $("#notif3").removeClass("visually-hidden").fadeIn();
+    // Disparaître après 3 secondes (3000 millisecondes)
+    setTimeout(function () {
+      $("#notif3").fadeOut();
+    }, 3000);
+    return;
+  }
+
+  const connect = {
+    email: email,
+    password: password,
+  }
+  console.log(connect);
+
+  fetch('http://localhost:3001/api/auth/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(connect)
+  })
+
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error('Échec de la demande d\'authentification');
+    }
+  })
+  .then(data => {
+    const token = data.token;
+    console.log(token); // Récupérer le jeton d'authentification de la réponse
+    // Utilisez le jeton d'authentification selon vos besoins (par exemple, le stocker dans le localStorage ou le sessionStorage)
+    window.localStorage.setItem('token', token)
+    // Exemple de redirection vers une autre page une fois connecté
+    window.location.href = '/accueil.html';
+  })
+  .catch(error => {
+    console.error('Erreur lors de la demande d\'authentification:', error);
+    // Gérer les erreurs d'authentification ici
+  });
+});
+
 $("#creat_account").click(function () {
   let nom = $("#nom").val();
   let prenom = $("#prenom").val();
@@ -86,22 +151,22 @@ $("#creat_account").click(function () {
       if (response.ok) {
         console.log("Utilisateur enregistré avec succès");
         $("#notif1")
-          .removeClass("visually-hidden") // Supprime la classe visually-hidden pour rendre l'élément visible
+          .removeClass("visually-hidden") 
           .fadeIn()
           .delay(3000)
           .fadeOut(function () {
-            $(this).addClass("visually-hidden"); // Ajoute à nouveau la classe visually-hidden pour masquer l'élément
+            $(this).addClass("visually-hidden"); 
           });
-        // Traitez la réponse de l'API si nécessaire
+       
       } else {
         console.error("Erreur lors de l'enregistrement de l'utilisateur");
-        // Traitez l'erreur si nécessaire
+        
         $("#notif2")
-          .removeClass("visually-hidden") // Supprime la classe visually-hidden pour rendre l'élément visible
+          .removeClass("visually-hidden") 
           .fadeIn()
           .delay(4000)
           .fadeOut(function () {
-            $(this).addClass("visually-hidden"); // Ajoute à nouveau la classe visually-hidden pour masquer l'élément
+            $(this).addClass("visually-hidden"); 
           });
       }
     })
@@ -110,6 +175,16 @@ $("#creat_account").click(function () {
         "Erreur lors de l'enregistrement de l'utilisateur :",
         error
       );
-      // Traitez l'erreur si nécessaire
+      
     });
 });
+
+/*----------------------------------GESTION DECO-------------------------------------------*/
+
+$("#deconnect").click(function () {
+  console.log("test");
+  window.localStorage.removeItem('token')
+  window.sessionStorage.removeItem('token')
+  window.location.href = '/index.html';
+
+})

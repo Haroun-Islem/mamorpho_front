@@ -1,129 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Créer un compte</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/logos/favico_morpho.png"
-    />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/aos/aos.css" />
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  </head>
 
-  <body>
-    <navbar class="sidebar" data-aos="fade-right">
-      <a href="">
-        <img class="logo w-100" src="assets/logos/logo_mamorpho.png" />
-      </a>
-      <div class="p-2 m-auto mt-5">
-        <a href="accueil.html" class="title_menu mb-3 p-2"
-          ><i class="fas fa-home-lg-alt"></i>&nbsp;&nbsp;Inspirations</a
-        >
-        <a href="premium.html" class="title_menu mb-3 p-2"
-          ><i class="fas fa-ruler-horizontal"></i>&nbsp;&nbsp;Premium</a
-        >
-        <a href="compte.html" class="title_menu mb-3 p-2"
-          ><i class="far fa-user"></i>&nbsp;&nbsp;Compte</a
-        >
-        <a href="connect.html" class="title_menu mb-3 p-2"
-          ><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Connexion</a
-        >
+<head>
+  <title>Créer un compte</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/logos/favico_morpho.png" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="assets/aos/aos.css" />
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+  <navbar class="sidebar" data-aos="fade-right">
+    <a href="">
+      <img class="logo w-100" src="assets/logos/logo_mamorpho.png" />
+    </a>
+    <div class="p-2 m-auto mt-5">
+      <a href="accueil.html" class="title_menu mb-3 p-2"><i class="fas fa-home-lg-alt"></i>&nbsp;&nbsp;Inspirations</a>
+      <a href="premium.html" class="title_menu mb-3 p-2"><i class="fas fa-ruler-horizontal"></i>&nbsp;&nbsp;Premium</a>
+      <a href="compte.html" class="title_menu mb-3 p-2"><i class="far fa-user"></i>&nbsp;&nbsp;Compte</a>
+      <a id="deconnect" style="cursor: pointer;" class="title_menu mb-3 p-2"><i class="fa-solid fa-power-off"></i>&nbsp;&nbsp;Déconnexion</a>
+    </div>
+  </navbar>
+
+  <section>
+    <div class="mt-5">
+      <div class="">
+        <h1 class="text-center fw-bolder" data-aos="zoom-in">
+          Créer un compte
+        </h1>
       </div>
-    </navbar>
-
-    <section>
-      <div class="mt-5">
-        <div class="">
-          <h1 class="text-center fw-bolder" data-aos="zoom-in">
-            Créer un compte
-          </h1>
+      <div class="m-auto w-50 p-2" id="notification">
+        <div class="notification visually-hidden p-2 m-auto" id="notif1">
+          <p class="text-center m-auto">Votre compte à bien était créer</p>
         </div>
-        <div class="m-auto w-50 p-2" id="notification">
-          <div class="notification visually-hidden p-2 m-auto" id="notif1">
-            <p class="text-center m-auto">Votre compte à bien était créer</p>
+        <div class="notification-2 visually-hidden p-2 m-auto" id="notif2">
+          <p class="text-center m-auto">l'email est déjà existant</p>
+        </div>
+        <div class="notification-3 visually-hidden p-2 m-auto" id="notif3">
+          <p class="text-center m-auto">Veuillez saisir tout les champs</p>
+        </div>
+      </div>
+      <form id="form-1" data-aos="zoom-in">
+        <div class="w-50 m-auto d-block text-center">
+          <div class="mt-5">
+            <input type="text" placeholder="Nom" class="w-50 m-auto" name="nom" value="" id="nom" required />
           </div>
-          <div class="notification-2 visually-hidden p-2 m-auto" id="notif2">
-            <p class="text-center m-auto">l'email est déjà existant</p>
+          <div class="mt-5">
+            <input id="prenom" type="text" placeholder="Prenom" class="w-50 m-auto" name="prenom" value="" required />
           </div>
-          <div class="notification-3 visually-hidden p-2 m-auto" id="notif3">
-            <p class="text-center m-auto">Veuillez saisir tout les champs</p>
+          <div class="mt-5">
+            <input id="email" type="email" placeholder="Email" class="w-50 m-auto" name="email" value="" required />
+          </div>
+          <div class="mt-5">
+            <input id="password" type="password" placeholder="Mot de passe" class="w-50 m-auto" name="password" value=""
+              required />
           </div>
         </div>
-        <form id="form-1" data-aos="zoom-in">
-          <div class="w-50 m-auto d-block text-center">
-            <div class="mt-5">
-              <input
-                type="text"
-                placeholder="Nom"
-                class="w-50 m-auto"
-                name="nom"
-                value=""
-                id="nom"
-                required
-              />
-            </div>
-            <div class="mt-5">
-              <input
-                id="prenom"
-                type="text"
-                placeholder="Prenom"
-                class="w-50 m-auto"
-                name="prenom"
-                value=""
-                required
-              />
-            </div>
-            <div class="mt-5">
-              <input
-                id="email"
-                type="email"
-                placeholder="Email"
-                class="w-50 m-auto"
-                name="email"
-                value=""
-                required
-              />
-            </div>
-            <div class="mt-5">
-              <input
-                id="password"
-                type="password"
-                placeholder="Mot de passe"
-                class="w-50 m-auto"
-                name="password"
-                value=""
-                required
-              />
-            </div>
-          </div>
-          <div class="text-center mt-5">
-            <button type="submit" class="creat-1 button-1" id="creat_account">
-              <span href="" class="text-white" style="font-size: 18px"
-                >Valider</span
-              >
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
+        <div class="text-center mt-5">
+          <button type="submit" class="creat-1 button-1" id="creat_account">
+            <span href="" class="text-white" style="font-size: 18px">Valider</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
 
-    <script src="assets/aos/aos.js"></script>
-    <script src="js/aos_init.js"></script>
-    <script src="js/main.js"></script>
-    <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+
+
+  <script src="assets/aos/aos.js"></script>
+  <script src="js/aos_init.js"></script>
+  <script src="js/main.js"></script>
+  <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>
