@@ -98,7 +98,14 @@ $('#connect').click(function(){
     if (response.ok) {
       return response.json();
     } else {
-      throw new Error('Échec de la demande d\'authentification');
+      console.error('Échec de la demande d\'authentification');
+      $("#notif2")
+      .removeClass("visually-hidden") 
+      .fadeIn()
+      .delay(4000)
+      .fadeOut(function () {
+        $(this).addClass("visually-hidden"); 
+      });
     }
   })
   .then(data => {
