@@ -255,3 +255,7 @@
     background-image: linear-gradient(to bottom, rgba(57, 85, 107, 0.5), rgba(57, 85, 107, 0.5)), url('/assets/images/background.svg');
   }
 }
+
+footer{
+  color: white!important;
+}
