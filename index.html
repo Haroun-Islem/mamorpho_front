@@ -1,225 +1,167 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <title>MaMorpho</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/logos/favico_morpho.png"
-    />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/acceuil.css" />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/aos/aos.css" />
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  </head>
 
-  <body>
-    <div class="background">
-      <nav
-        class="navbar navbar-expand-lg p-4 w-100 fixed-top"
-        data-aos="fade-left"
-        data-aos-duration="1000"
-      >
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-          <button
-            class="navbar-toggler bg-white"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto mt-3">
-              <a
-                class="nav-link active text-white fw-bold"
-                aria-current="page"
-                href="#"
-                >Accueil</a
-              >
-              <a class="nav-link text-white fw-bold" href="#"
-                >A propos de nous</a
-              >
-              <a class="nav-link text-white fw-bold" href="#">Contactez-nous</a>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <title>MaMorpho</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/logos/favico_morpho.png" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/acceuil.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="assets/aos/aos.css" />
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="background">
+    <nav class="navbar navbar-expand-lg p-4  fixed-top" data-aos="fade-left" data-aos-duration="1000">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto mt-3">
+            <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Accueil</a>
+            <a class="nav-link text-white fw-bold" href="#">A propos de nous</a>
+            <a class="nav-link text-white fw-bold" href="#">Contactez-nous</a>
           </div>
         </div>
-      </nav>
-
-      <div>
-        <div
-          class="logo-acc m-auto text-center"
-          style="margin-top: 135px !important"
-        >
-          <img
-            src="assets/logos/logo_blanc.png"
-            alt=""
-            class="img-fluid"
-            style="width: 75%"
-          />
-        </div>
       </div>
+    </nav>
 
-      <div class="m-auto mt-5 w-50">
-        <p class="text-white text-center texte-center m-auto fw-bolder">
-          Nous sommes enfin prêt venez découvrir notre solution !
-        </p>
-      </div>
-
-      <div class="d-flex m-auto text-center">
-        <div
-          class="text-center mt-5 m-auto"
-          data-aos="fade-right"
-          data-aos-duration="2000"
-        >
-          <button class="button-2">
-            <a
-              href="account_creat.html"
-              class="text-white text-decoration-none fw-bolder"
-              style="font-size: 18px"
-              >Créez votre compte dès maintenant !</a
-            >
-          </button>
-        </div>
-        <div
-          class="text-center mt-5 m-auto"
-          data-aos="fade-left"
-          data-aos-duration="2000"
-        >
-          <button class="button-3">
-            <a
-              href="connect.html"
-              class="text-black fw-bold text-decoration-none"
-              style="font-size: 18px"
-              >Connexion</a
-            >
-          </button>
-        </div>
-      </div>
-      <div class="fleche m-auto mt-5" data-aos="zoom-in">
-        <p class="decouvrir text-center text-white">Découvrir</p>
-        <div class="m-auto text-center">
-          <a class="m-auto" href="#topres"
-            ><i class="f-r text-white fa-solid fa-arrow-down fa-3x"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="pres-1 d-flex" data-aos="zoom-in" id="topres">
-        <div class="">
-          <img src="assets/photos/feat_1.PNG" alt="" class="img-pres1 me-5" />
-        </div>
-        <div>
-          <p class="para-1">
-            "<i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;&nbsp;Découvrez
-            nos fonctionnalité phares&nbsp;&nbsp;&nbsp;<i
-              class="fa-solid fa-quote-right"
-            ></i>
-          </p>
-        </div>
+    <div class="w-50 m-auto">
+      <div class="logo-acc m-auto text-center" style="margin-top: 135px !important">
+        <img src="assets/logos/logo_blanc.png" alt="" class="img-fluid" style="width: 75%" />
       </div>
     </div>
 
-    <div class="pres-2 d-flex" data-aos="zoom-in">
-      <div class="me-2">
-        <p class="para-2">
-          "<i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;&nbsp;Découvrez
-           nos fonctionnalité phare&nbsp;&nbsp;&nbsp;<i
-            class="fa-solid fa-quote-right"
-          ></i>
-        </p>
+    <div class="m-auto mt-5 w-50">
+      <p class="text-white text-center texte-center m-auto fw-bolder">
+        Nous sommes enfin prêt venez découvrir notre solution !
+      </p>
+    </div>
+
+    <div class="d-flex m-auto w-50 text-center">
+      <div class="text-center mt-5 m-auto" data-aos="fade-right" data-aos-duration="2000">
+        <button class="button-2">
+          <a href="account_creat.html" class="text-white text-decoration-none fw-bolder" style="font-size: 18px">Créez
+            votre compte dès maintenant !</a>
+        </button>
       </div>
-      <div class="">
-        <img src="assets/photos/feat_2.PNG" alt="" class="img-pres1 me-5" />
+      <div class="text-center mt-5 m-auto" data-aos="fade-left" data-aos-duration="2000">
+        <button class="button-3">
+          <a href="connect.html" class="text-black fw-bold text-decoration-none" style="font-size: 18px">Connexion</a>
+        </button>
+      </div>
+    </div>
+    <div class="fleche m-auto mt-5" data-aos="zoom-in">
+      <p class="decouvrir text-center text-white">Découvrir</p>
+      <div class="m-auto text-center">
+        <a class="m-auto" href="#topres"><i class="f-r text-white fa-solid fa-arrow-down fa-2x"></i>
+        </a>
       </div>
     </div>
 
-    <div class="pres-3 d-flex" data-aos="zoom-in">
+    <div class="pres-1 d-flex" data-aos="zoom-in" id="topres">
       <div class="">
-        <img src="assets/photos/feat_3.PNG" alt="" class="img-pres1 me-5" />
+        <img src="assets/photos/feat_1.PNG" alt="" class="img-pres1 me-5" />
       </div>
       <div>
         <p class="para-1">
-          "<i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;&nbsp;Pour plus de
-          fonctionnalités, abonnez-vous à l'offre premium<br />Nos profesionnels
-          sont là pour vous&nbsp;&nbsp;&nbsp;<i
-            class="fa-solid fa-quote-right"
-          ></i>
+          "<i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;&nbsp;Découvrez
+          nos fonctionnalité phares&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i>
         </p>
       </div>
     </div>
+  </div>
 
-    <button id="btnScrollToTop" class="btn-scroll-top">
-      <i class="fa-solid fa-arrow-up"></i> Remonter plus haut
-    </button>
+  <div class="pres-2 d-flex" data-aos="zoom-in">
+    <div class="me-2">
+      <p class="para-2">
+        "<i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;&nbsp;Découvrez
+        nos fonctionnalité phare&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i>
+      </p>
+    </div>
+    <div class="">
+      <img src="assets/photos/feat_2.PNG" alt="" class="img-pres1 me-5" />
+    </div>
+  </div>
 
-    <footer class="footer mt-5" style="background-color: #314250">
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-4 mt-5">
-            <h5 class="fw-bold">À propos</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="no-lien">A propos</a></li>
-              <li><a href="#" class="no-lien">Nous contacter</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4 mt-5">
-            <p class="fw-bold">Tous droits réservés &copy;2023 Mamorpho</p>
-          </div>
-          <div class="col-md-4 mt-5">
-            <h5 class="fw-bold">Retrouvez-nous sur</h5>
-            <ul class="list-inline">
-              <li><a href="#" class="no-lien">Facebook</a></li>
-              <li><a href="#" class="no-lien">Instagram</a></li>
-              <li><a href="#" class="no-lien">Snapchat</a></li>
-            </ul>
-          </div>
+  <div class="pres-3 d-flex" data-aos="zoom-in">
+    <div class="">
+      <img src="assets/photos/feat_3.PNG" alt="" class="img-pres1 me-5" />
+    </div>
+    <div>
+      <p class="para-1">
+        "<i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;&nbsp;Pour plus de
+        fonctionnalités, abonnez-vous à l'offre premium<br />Nos profesionnels
+        sont là pour vous&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-quote-right"></i>
+      </p>
+    </div>
+  </div>
+
+  <button id="btnScrollToTop" class="btn-scroll-top">
+    <i class="fa-solid fa-arrow-up"></i> Remonter plus haut
+  </button>
+
+  <footer class="footer mt-5" style="background-color: #314250">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 mt-5">
+          <h5 class="fw-bold">À propos</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="no-lien">A propos</a></li>
+            <li><a href="#" class="no-lien">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mt-5">
+          <p class="fw-bold">Tous droits réservés &copy;2023 Mamorpho</p>
+        </div>
+        <div class="col-md-4 mt-5">
+          <h5 class="fw-bold">Retrouvez-nous sur</h5>
+          <ul class="list-inline">
+            <li><a href="#" class="no-lien">Facebook</a></li>
+            <li><a href="#" class="no-lien">Instagram</a></li>
+            <li><a href="#" class="no-lien">Snapchat</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script>
-      // Sélectionne le bouton "Remonter en haut"
-      const btnScrollToTop = document.getElementById("btnScrollToTop");
+  <script>
+    // Sélectionne le bouton "Remonter en haut"
+    const btnScrollToTop = document.getElementById("btnScrollToTop");
 
-      // Affiche ou masque le bouton en fonction de la position de défilement
-      window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 0) {
-          btnScrollToTop.style.display = "block";
-        } else {
-          btnScrollToTop.style.display = "none";
-        }
+    // Affiche ou masque le bouton en fonction de la position de défilement
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 0) {
+        btnScrollToTop.style.display = "block";
+      } else {
+        btnScrollToTop.style.display = "none";
+      }
+    });
+
+    // Fait défiler la page vers le haut lorsque le bouton est cliqué
+    btnScrollToTop.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
+    });
+  </script>
 
-      // Fait défiler la page vers le haut lorsque le bouton est cliqué
-      btnScrollToTop.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
-    </script>
+  <script src="assets/aos/aos.js"></script>
+  <script src="js/aos_init.js"></script>
+  <script src="js/main.js"></script>
+  <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
 
-    <script src="assets/aos/aos.js"></script>
-    <script src="js/aos_init.js"></script>
-    <script src="js/main.js"></script>
-    <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
 </html>
