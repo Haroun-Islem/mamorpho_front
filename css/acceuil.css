@@ -32,9 +32,48 @@
 
   }
   
-  .test{
+  .pres-1{
     
-    border: solid 1px blue;
     margin: auto;
-    
+    width: 70vw;
+    margin-top: 590px!important;
+    color: black!important;
   }
+
+  .img-pres1{
+    border-radius: 15px;
+  }
+  .para-1{
+
+    margin-top: 150px!important;
+    font-size: 30px!important;
+  }
+
+  .para-2{
+    
+    font-size: 30px!important;
+    color: black!important;
+  }
+.pres-2{
+  margin-top: 1900px!important;
+  margin: auto;
+  width: 70vw;
+
+}
+
+.pres-3{
+  margin-top: 1500px!important;
+  margin: auto;
+  width: 70vw;
+  border: blue solid 1px!important;
+
+}
+.fleche{
+  width: 110px!important;
+}
+
+.f-r{
+  border: rgb(238, 232, 232) solid 1px!important;
+  border-radius: 50%;
+  padding: 10px!important;
+}
