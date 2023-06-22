@@ -19,10 +19,10 @@
       <img class="logo w-100" src="assets/logos/logo_mamorpho.png" />
     </a>
     <div class="p-2 m-auto mt-5">
-      <a href="accueil.html" class="title_menu mb-3 p-2"><i class="fas fa-home-lg-alt"></i>&nbsp;&nbsp;Inspirations</a>
-      <a href="premium.html" class="title_menu mb-3 p-2"><i class="fas fa-ruler-horizontal"></i>&nbsp;&nbsp;Premium</a>
-      <a href="compte.html" class="title_menu mb-3 p-2"><i class="far fa-user"></i>&nbsp;&nbsp;Compte</a>
-      <a id="deconnect" style="cursor: pointer;" class="title_menu mb-3 p-2"><i class="fa-solid fa-power-off"></i>&nbsp;&nbsp;Déconnexion</a>
+        <a id="acceuil_1"href="accueil.html" class="title_menu mb-3 p-2 visually-hidden"><i class="fas fa-home-lg-alt"></i>&nbsp;&nbsp;Inspirations</a>
+        <a id="premium_1" href="premium.html" class="title_menu mb-3 p-2 visually-hidden"><i class="fas fa-ruler-horizontal"></i>&nbsp;&nbsp;Premium</a>
+        <a id="compte_1" href="compte.html" class="title_menu mb-3 p-2 visually-hidden"><i class="far fa-user"></i>&nbsp;&nbsp;Compte</a>
+        <a id="deconnect" style="cursor: pointer;" class="title_menu mb-3 p-2 visually-hidden"><i class="fa-solid fa-power-off"></i>&nbsp;&nbsp;Déconnexion</a>
     </div>
   </navbar>
 
@@ -56,6 +56,25 @@
       </div>
     </div>
   </section>
+
+  <script>
+    // Récupérer le jeton d'authentification du localStorage
+    const token = window.localStorage.getItem('token');
+
+    // Vérifier si le jeton est valide ou rediriger vers la page de connexion
+    if (!token || token === '') {
+      window.location.href = '/connect.html';
+    }else if(token){
+        $('#acceuil_1').removeClass("visually-hidden");
+        $('#premium_1').removeClass("visually-hidden");
+        $('#compte_1').removeClass("visually-hidden");
+        $('#deconnect').removeClass("visually-hidden");
+    }
+
+    // Utiliser le jeton pour des appels API ou des vérifications d'authentification
+    // ...
+
+  </script>
 
   <script src="assets/aos/aos.js"></script>
   <script src="js/aos_init.js"></script>

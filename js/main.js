@@ -182,9 +182,7 @@ $("#creat_account").click(function () {
 /*----------------------------------GESTION DECO-------------------------------------------*/
 
 $("#deconnect").click(function () {
-  console.log("test");
   window.localStorage.removeItem('token')
   window.sessionStorage.removeItem('token')
   window.location.href = '/index.html';
-
 })
